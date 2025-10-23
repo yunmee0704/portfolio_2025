@@ -1,0 +1,87 @@
+@import "./variables.scss";
+
+.section {
+  &-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 58px 56px;
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      span {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+      }
+      h1 {
+        font-size: 68px;
+        line-height: auto;
+        font-weight: 600;
+      }
+      p {
+        font-size: 17px;
+        line-height: 27px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &-card {
+    padding: 42px 24px;
+    gap: 24px;
+    .section-card__title {
+      h2 {
+        text-align: center;
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: 600;
+        margin-bottom: 42px;
+      }
+    }
+    .section-card__content {
+      display: flex;
+      gap: 24px;
+
+      &-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+      }
+    }
+  }
+
+  &-contact {
+ padding: 42px 24px 86px;
+    .section-contact__title {
+      h2 {
+        font-size: 32px;
+        line-height: 42px;
+        font-weight: 600;
+        text-align: left;
+        margin-bottom: 24px;
+      }
+    }
+    .section-contact__content {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      .section-contact__social {
+        width: 50%;
+      }
+      .section-contact__form {
+        width: 50%;
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+        input {
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "../../styles/variables.scss";
+
+.input {
+    width: 520px;
+    height: 59px;
+    padding: 16px 24px;
+    box-sizing: border-box;
+    background-color: $grey;
+    color: $black;
+    border: none;
+
+}

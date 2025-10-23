@@ -1,0 +1,14 @@
+@import './variables.scss';
+
+body {
+    height: auto;
+    display: block;
+    place-items:initial;
+    background-color: $black;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
