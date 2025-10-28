@@ -106,7 +106,7 @@ function App() {
             <div className="section-contact__form">
               <form action="">
                 <Input />
-                <Button></Button>
+                <Button mode={mode} onToggle={modechange}></Button>
               </form>
             </div>
           </div>
