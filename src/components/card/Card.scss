@@ -1,19 +1,22 @@
 @import "../../styles/variables.scss";
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    width: calc((100% - 48px) / 3);
-    box-sizing: border-box;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: calc((100% - 48px) / 3);
+  box-sizing: border-box;
+
+  @media screen and (max-width : $breakpoint-mobile) {
+    width: 100%;
+  }
+
   // 기술 카드
   &-skill {
     height: 429px;
     padding: 64px 42px;
- 
 
     &__icon {
       width: 124px;
@@ -47,28 +50,27 @@
     color: $black;
 
     &__details {
-        font-weight: 600;
-        margin-bottom: 15px;
-        &-items {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: start;
-            
-        }
-        &-company {
-            font-size: 24px;
-            line-height: 24px;
-        }
-        &-period {
-            font-size: 16px;
-            line-height: 24px;
-        }
+      font-weight: 600;
+      margin-bottom: 15px;
+      &-items {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+      }
+      &-company {
+        font-size: 24px;
+        line-height: 24px;
+      }
+      &-period {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
 
     &__description {
-        font-size: 16px;
-        line-height: 24px;
+      font-size: 16px;
+      line-height: 24px;
     }
   }
 
@@ -78,23 +80,46 @@
     margin-bottom: 24px;
 
     &__link {
-        width: 100%;
-        height: 100%;
+      width: 100%;
+      height: 100%;
     }
     &__img {
+      width: 100%;
+      height: 330px;
+      margin-bottom: 24px;
+
+      img {
         width: 100%;
-        height: 330px;
-        margin-bottom: 24px;
+        height: 100%;
+        object-fit: cover;
+      }
     }
     &__title {
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 30px;
-        margin-bottom: 8px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 30px;
+      margin-bottom: 8px;
     }
     &__description {
-        font-size: 16px;
-        line-height: 24px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @media screen and (max-width : $breakpoint-mobile) {
+        height: auto;
+    }
+  }
+
+  //   sns리스트카드
+  &-sns {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+
+    li {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
     }
   }
 }

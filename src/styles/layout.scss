@@ -6,6 +6,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 58px 56px;
+
+
     &-content {
       display: flex;
       flex-direction: column;
@@ -26,6 +28,26 @@
         line-height: 27px;
         font-weight: 400;
       }
+    }
+    @media screen and (max-width : $breakpoint-mobile) {
+        flex-direction: column-reverse;
+        padding : 32px 24px;
+
+        &__content-image{
+            margin-bottom: 20px;
+        }
+        
+        &__content-title {
+            h1 {
+                line-height: 100%;
+                margin: 10px 0;
+                font-size: 48px ;
+            }
+        
+        }
+        .button {
+            margin: 0 auto;
+        }
     }
   }
 
@@ -50,7 +72,18 @@
         flex-wrap: wrap;
         gap: 24px;
       }
+
+    
     }
+    @media screen and (max-width : $breakpoint-mobile) {
+        .section-card__content {
+            flex-direction: column;
+
+            &-grid {
+                gap: 0;
+            }
+        }
+      }
   }
 
   &-contact {
@@ -68,8 +101,10 @@
       display: flex;
       justify-content: space-between;
       gap: 24px;
+      
       .section-contact__social {
         width: 50%;
+    
       }
       .section-contact__form {
         width: 50%;
@@ -78,10 +113,24 @@
           flex-direction: column;
           gap: 24px;
         }
-        input {
-
-        }
+  
       }
+      @media screen and (max-width : $breakpoint-mobile) {
+        flex-direction: column;
+
+        .section-contact__social,
+        .section-contact__form{
+            width: 100%;
+        }
+
+        .section-contact__form {
+            margin-top: 20px;
+            button {
+                margin: 0 auto;
+            }
+        }
     }
+    }
+ 
   }
 }

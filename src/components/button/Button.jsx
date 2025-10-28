@@ -1,8 +1,8 @@
 import "./Button.scss";
 
-function Button() {
+function Button({mode,onToggle}) {
     return (
-        <button className="button">
+        <button className={`default ${ mode ? 'lightmode':'darkmode'}`} onClick={onToggle}>
             Button
         </button>
     )

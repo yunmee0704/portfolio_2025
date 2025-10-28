@@ -1,45 +1,91 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba($color: #333, $alpha: 1.0);
   .header__container {
+    position: relative;
+    width: 1200px;
     display: flex;
+ 
     justify-content: space-between;
     padding: 24px 42px;
 
     .header__logo {
-        font-size: 20px;
-        line-height: 30px;
-        font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 600;
     }
     .header__menu-toggle {
-        display: none;
+      display: none;
     }
     .header__menu {
-        display: flex;
-        gap: 24px;
-        
-        li {
-            a {
-                font-size: 17px;
-                line-height: 27px;
-                font-weight: normal;
-            }
-        }
-    }
-    
-  }
-}
+      display: flex;
+      gap: 24px;
 
-
-@media screen and (max-width: $breakpoint-mobile) {
-    .header {
-      .header__container {
-        .header__menu-toggle {
-          display: block;
-        }
-        .header__menu {
-          display: none;
+      li {
+        a {
+          font-size: 17px;
+          line-height: 27px;
+          font-weight: normal;
         }
       }
     }
   }
+
+  &.darkmode {
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.87);
+  }
+
+  &.lightmode {
+    background-color: $white;
+    color: #333;
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  .header {
+    z-index: 20;
+    width: 100%;
+    .header__container {
+     width: 100%;
+      padding: 24px;
+
+      .header__menu-toggle {
+        display: block;
+      }
+      .header__menu {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 78px;
+        left:0;
+        background: #333;
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+
+        &--open {
+            transform: translateX(0);
+            opacity: 1;
+            visibility: visible;
+            li {
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+          }
+      }
+    }
+  }
+}
