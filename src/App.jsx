@@ -20,35 +20,22 @@ function App() {
     }
 
     useEffect(() => {
-        if (mode) {
-            document.body.classList.add('darkmode');
-            document.body.classList.remove('lightmode');
-            const headerElement = document.querySelector('header');
-            if (headerElement) {
-                headerElement.classList.add('darkmode');
-                headerElement.classList.remove('lightmode');
+        const themeClass = mode ? 'darkmode' : 'lightmode';
+        const oppositeClass = mode ? 'lightmode' : 'darkmode';
+        
+        const elements = [
+            document.body,
+            ...document.querySelectorAll('header, button')
+        ];
+        
+        elements.forEach(element => {
+            if (element) {
+                element.classList.remove(oppositeClass);
+                element.classList.add(themeClass);
             }
-            const buttonElement = document.querySelector('button');
-            if (buttonElement) {
-                buttonElement.classList.add('darkmode');
-                buttonElement.classList.remove('lightmode');
-            }
-        } else {
-            document.body.classList.add('lightmode');
-            document.body.classList.remove('darkmode');
-            const headerElement = document.querySelector('header');
-            if (headerElement) {
-                headerElement.classList.add('lightmode');
-                headerElement.classList.remove('darkmode');
-            }
-
-            const buttonElement = document.querySelector('button');
-            if (buttonElement) {
-                buttonElement.classList.add('lightmode');
-                buttonElement.classList.remove('darkmode');
-            }
-        }
+        });
     }, [mode]);
+
   return (
     <div className="container">
       <Header></Header>
