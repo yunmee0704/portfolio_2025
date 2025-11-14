@@ -1,9 +1,8 @@
 import "./Card.scss";
 
 const snsList = [
-    {id : 1, link:"link1", src:"/src/assets/img/skills_icon_1.png",alt:"블로그"},
-    {id : 2, link:"link2", src:"/src/assets/img/skills_icon_1.png",alt:"깃헙"},
-    {id : 3, link:"link3", src:"/src/assets/img/skills_icon_1.png",alt:"포트폴리오"},
+    {id : 1, link:"link1", src:"/src/assets/img/contact_1.png",alt:"블로그"},
+    {id : 2, link:"link2", src:"/src/assets/img/contact_2.png",alt:"깃헙"}
 ]
 
 const snsItem = snsList.map(item =>

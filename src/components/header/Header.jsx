@@ -12,8 +12,9 @@ export default function Header() {
   const menuList = [
     { title: "About", id: 1 , link :"#About"},
     { title: "Skill", id: 1 , link :"#Skill"},
-    { title: "Work", id: 2 , link :"#Work"},
-    { title: "Contact", id: 3 , link: "#Contact"},
+    { title: "Career", id: 2 , link :"#Career"},
+    { title: "Project", id: 3 , link :"#Project"},
+
   ];
   
   const listItems = menuList.map((item) => <li key={item.id}><a href={item.link} onClick={modalShow}>{item.title}</a></li>);

@@ -44,7 +44,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    height: 330px;
+    height: auto;
     padding: 42px;
     background-color: $grey;
     color: $black;
@@ -69,16 +69,49 @@
     }
 
     &__description {
-      font-size: 16px;
+      font-size: 18px;
       line-height: 24px;
+      li {
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 
   //작업물 카드
   &-work {
-    height: 419px;
+    height: auto;
     margin-bottom: 24px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 
+      img {
+        &:hover {
+          transform: scale(1.05);
+          transition: transform 0.3s ease-in-out;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .card-work__img {
+        background-color: $white;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
     &__link {
       width: 100%;
       height: 100%;
@@ -87,22 +120,33 @@
       width: 100%;
       height: 330px;
       margin-bottom: 24px;
+      border-radius: 20px;
+      overflow: hidden;
 
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
+
     }
     &__title {
       font-size: 24px;
-      font-weight: 600;
+      font-weight: 700;
       line-height: 30px;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
+      padding: 0 10px;
     }
     &__description {
       font-size: 16px;
       line-height: 24px;
+      padding: 0 10px;
+      li {
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
 
     @media screen and (max-width : $breakpoint-mobile) {
@@ -120,6 +164,12 @@
       display: inline-block;
       width: 50px;
       height: 50px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
