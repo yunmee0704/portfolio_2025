@@ -10,11 +10,13 @@ body {
     &.darkmode {
         background-color: #333;
         color: rgba(255, 255, 255, 0.87);
+        border-color:$white;
     }
 
     &.lightmode {
         background-color: $white;
         color: #333;
+        border-color: $black;
     }
   
 }

@@ -1,0 +1,9 @@
+@use "../../../styles/variables.scss" as *;
+
+.swiper  {
+    max-width: 800px;
+
+    .swiper-slide {
+        height: auto;
+    }
+}

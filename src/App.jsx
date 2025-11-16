@@ -2,10 +2,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 
-//PROJECT 상세페이지
-import Project1 from "./pages/Project1";
-import Project2 from "./pages/Project2";
-import Project3 from "./pages/Project3";
+
 
 
 
@@ -20,6 +17,11 @@ import Input from "./components/input/Input";
 import DarkModeBtn from "./components/button/DarkMode";
 // import Header from './components/Header';
 import "../src/styles/main.scss";
+
+//PROJECT 상세페이지
+import Project1 from "./pages/Project1/Project1";
+import Project2 from "./pages/Project2";
+import Project3 from "./pages/Project3";
 
 
 function App() {
