@@ -9,7 +9,7 @@ const workList = [
     ]},
     {id: 2, src:'./src/assets/img/work_2.png', title: 'LG-LENS 웹/어드민 신규 구축',desc :[
       {id: 1, content: "반응형 UI 기반 SCSS 구조 설계 및 컴포넌트 단위 퍼블리싱 가이드 구축"},
-      {id: 2, content: "다중 디바이스 환경에서 재사용성 높은 UI 컴포넌트를 설계하여 개발 협업 효율성 향상"},
+      {id: 2, content: "다중 디바이스 환경s에서 재사용성 높은 UI 컴포넌트를 설계하여 개발 협업 효율성 향상"},
       {id: 3, content: "Jira·Confluence 기반 협업 환경에서 생산성 개선 및 SCSS 체계 정립"},
     ]},
     {id: 3, src:'./src/assets/img/work_3.png', title: 'NAMING 브랜드몰 전체 리뉴얼', desc :[
