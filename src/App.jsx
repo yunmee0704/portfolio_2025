@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
+// 라우터 제거: 단일 페이지 앵커 네비게이션만 사용
 
 
 
@@ -12,24 +12,16 @@ import SkillCard from "./components/card/Skill-card";
 import CareerCard from "./components/card/Career-card";
 import WorkCard from "./components/card/Work-card";
 import SnsCard from "./components/card/Sns-card";
-import Button from "./components/button/Button";
-import Input from "./components/input/Input";
 import DarkModeBtn from "./components/button/DarkMode";
 // import Header from './components/Header';
 import "../src/styles/main.scss";
 
-//PROJECT 상세페이지
-import Project1 from "./pages/Project1/Project1";
-import Project2 from "./pages/Project2";
-import Project3 from "./pages/Project3";
-
 
 function App() {
-  const [mode, Setmode] = useState(false);
+  const [mode, Setmode] = useState(true);
   const modechange = () => {
     Setmode(!mode);
   }
-  const location = useLocation();
 
   useEffect(() => {
     const themeClass = mode ? 'darkmode' : 'lightmode';
@@ -51,13 +43,6 @@ function App() {
   return (
     <div className="container">
       <Header></Header>
-      <Routes>
-        <Route path="/Project1" element={<Project1 />} />
-        <Route path="/Project2" element={<Project2 />} />
-        <Route path="/Project3" element={<Project3 />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
-      {location.pathname === '/' && (
       <main className="main">
         <section className="section section-about" id="About">
           <div className="section-about-content">
@@ -97,12 +82,8 @@ function App() {
           <div className="section-card__content-grid">
             <WorkCard />
           </div>
-          <div className="button-box">
-            <Button mode={mode} onToggle={modechange} text="View all projects"></Button>
-          </div>
         </section>
       </main>
-      )}
       <DarkModeBtn mode={mode} onToggle={modechange} />
     </div>
   );

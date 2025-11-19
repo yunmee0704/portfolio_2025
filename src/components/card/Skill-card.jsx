@@ -1,4 +1,4 @@
-import "./Card.scss";
+import styles from "./Card.module.scss";
 
 const skillList = [
   {
@@ -33,12 +33,12 @@ const skillList = [
 
 
 const skillItem = skillList.map((item) => (
-  <div className="card card-skill" key={item.id}>
-    <div className="card-skill__icon">
+  <div className={`${styles.card} ${styles['card-skill']}`} key={item.id}>
+    <div className={styles['card-skill__icon']}>
       <img src={`/src/assets/img/skill_${item.id}.png`} alt={`skill_${item.id}`} />
     </div>
-    <div className="card-skill__title">{item.title}</div>
-    <div className="card-skill__description">
+    <div className={styles['card-skill__title']}>{item.title}</div>
+    <div className={styles['card-skill__description']}>
       <ul>
         {item.desc.map((descItem) => (
           <li key={descItem.id}>{descItem.text}</li>

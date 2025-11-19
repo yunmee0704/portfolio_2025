@@ -1,10 +1,10 @@
-import "./Button.scss";
+import styles from "./Button.module.scss";
 
-function Button({mode,onToggle,text}) {
+function Button({text,link}) {
     return (
-        <button className={`default ${ mode ? 'lightmode':'darkmode'}`} onClick={onToggle}>
+        <a className={styles.default} href= {link}>
             {text}
-        </button>
+        </a>
     )
 }
 

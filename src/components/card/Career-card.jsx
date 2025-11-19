@@ -1,4 +1,4 @@
-import "./Card.scss";
+import styles from "./Card.module.scss";
 
 const careerList = [
     {
@@ -32,18 +32,18 @@ const careerList = [
 ]
 
 const careerItem = careerList.map(item =>
-    <div className="card card-career" key={item.id}>
-        <div className="card-career__details">
-            <div className="card-career__details-item">
-                <div className="card-career__details-company">
+    <div className={`${styles.card} ${styles['card-career']}`} key={item.id}>
+        <div className={styles['card-career__details']}>
+            <div className={styles['card-career__details-item']}>
+                <div className={styles['card-career__details-company']}>
                     {item.title}
                 </div>
-                <div className="card-career__details-period">
+                <div className={styles['card-career__details-period']}>
                     {item.period}
                 </div>
             </div>
         </div>
-        <div className="card-career__description">
+        <div className={styles['card-career__description']}>
             <ul>
                 {item.desc.map((descItem) => (
                     <li key={descItem.id}>- {descItem.content}</li>

@@ -1,21 +1,38 @@
 @import './variables.scss';
 
 body {
+    font-family: var(--font-sans);
     height: auto;
     display: block;
     margin: 0;
     min-height: 100vh;
-    background-color: #333;
+    background:
+        radial-gradient(1200px 600px at 10% -10%, rgba(14, 165, 233, 0.10), transparent 60%),
+        radial-gradient(800px 400px at 90% 10%, rgba(34, 211, 238, 0.08), transparent 60%),
+        linear-gradient(180deg, var(--bg-accent), var(--bg-color));
+    color: var(--text-primary);
 
     &.darkmode {
-        background-color: #333;
-        color: rgba(255, 255, 255, 0.87);
+        --bg-color: #0b1220;
+        --bg-accent: #111a2e;
+        --text-primary: #e5e7eb;
+        --text-secondary: #9ca3af;
+        --card-bg: rgba(13, 18, 31, 0.60);
+        --border-color: rgba(148, 163, 184, 0.12);
+        --accent: #22d3ee;
+        color: var(--text-primary);
         border-color:$white;
     }
 
     &.lightmode {
-        background-color: $white;
-        color: #333;
+        --bg-color: #f6f7fb;
+        --bg-accent: #ffffff;
+        --text-primary: #1f2937;
+        --text-secondary: #6b7280;
+        --card-bg: rgba(255, 255, 255, 0.70);
+        --border-color: rgba(15, 23, 42, 0.08);
+        --accent: #0ea5e9;
+        color: var(--text-primary);
         border-color: $black;
     }
   
@@ -24,7 +41,13 @@ body {
 .container {
     margin: 0 auto;
     max-width: 1200px;
-    padding-top: 78px;
+    padding: 96px 24px 24px;
+    width: 100%;
+    box-sizing: border-box;
 
 
+}
+
+.text-secondary {
+    color: var(--text-secondary);
 }

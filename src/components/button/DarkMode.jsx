@@ -1,10 +1,10 @@
-import "./Button.scss";
+import styles from "./Button.module.scss";
 
 
 function DarkModeBtn({mode, onToggle}) {
 
     return (
-        <button className={`modeBtn ${ mode ? 'lightmode':'darkmode'}`} onClick={onToggle}>
+        <button className={`${styles.modeBtn} ${ mode ? 'lightmode':'darkmode'}`} onClick={onToggle}>
             <span>{mode? '☀️':'🌙'}</span>
         </button>
     )

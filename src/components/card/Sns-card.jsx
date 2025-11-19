@@ -1,4 +1,4 @@
-import "./Card.scss";
+import styles from "./Card.module.scss";
 
 const snsList = [
     {id : 1, link:"link1", src:"/src/assets/img/contact_1.png",alt:"블로그"},
@@ -15,7 +15,7 @@ const snsItem = snsList.map(item =>
 
 function SnsCard(){
     return (
-        <ul className="card-sns">
+        <ul className={styles['card-sns']}>
             {snsItem}
         </ul>
     )

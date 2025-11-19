@@ -1,4 +1,4 @@
-import "./Header.scss";
+import styles from "./Header.module.scss";
 import { useState } from "react";
 
 
@@ -20,10 +20,10 @@ export default function Header() {
   const listItems = menuList.map((item) => <li key={item.id}><a href={item.link} onClick={modalShow}>{item.title}</a></li>);
 
   return (
-    <header className="header">
-      <div className="header__container">
-        <h1 className="header__logo">🐹</h1>
-        <button className="header__menu-toggle" onClick={modalShow}>
+    <header className={styles.header}>
+      <div className={styles["header__container"]}>
+        <h1 className={styles["header__logo"]}>🐹</h1>
+        <button className={styles["header__menu-toggle"]} onClick={modalShow}>
           <svg
             width="24"
             height="24"
@@ -33,13 +33,13 @@ export default function Header() {
           >
             <path
               d="M3 18H21M3 12H21M3 6H21"
-              stroke="white"
+              stroke="currentColor"
               stroke-width="2"
               stroke-linecap="round"
             />
           </svg>
         </button>
-        <ul className={`header__menu ${isMenuOpen ? 'header__menu--open' : ''}`}>
+        <ul className={`${styles["header__menu"]} ${isMenuOpen ? styles["header__menu--open"] : ''}`}>
             {listItems}</ul>
       </div>
     </header>
