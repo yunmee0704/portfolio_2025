@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles["header__container"]}>
-        <h1 className={styles["header__logo"]}>🐹</h1>
+        <h1 className={styles["header__logo"]}>YUNMEE</h1>
         <button className={styles["header__menu-toggle"]} onClick={modalShow}>
           <svg
             width="24"
