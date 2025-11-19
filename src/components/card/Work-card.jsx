@@ -46,8 +46,8 @@ const workList = [
       '- 카카오맵으로 지도 구현',
       '🛠️기술 : HTML5, SCSS, jQuery, Slick.js'
     ],
-    ctaUrl: 'https://github.com/0704lym/4usoft-homepage',
-    ctaLabel: 'github 보기'
+    ctaUrl: 'https://yunmee0704.github.io/4usoft',
+    ctaLabel: '사이트 보기'
   },
   {
     id: 4,
