@@ -63,7 +63,7 @@ const workList = [
       '- CSS 변수 + 글라스모피즘 UI, 반응형 레이아웃 적용',
       '🛠️기술 : React, Vite, SCSS'
     ],
-    ctaUrl: 'https://github.com/',
+    ctaUrl: 'https://github.com/yunmee0704/portfolio_2025',
     ctaLabel: 'GitHub 보기'
   }
 ];

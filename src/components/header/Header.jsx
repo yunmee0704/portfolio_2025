@@ -10,10 +10,10 @@ export default function Header() {
   };
 
   const menuList = [
-    { title: "About", id: 1 , link :"#About"},
-    { title: "Skill", id: 1 , link :"#Skill"},
-    { title: "Career", id: 2 , link :"#Career"},
-    { title: "Project", id: 3 , link :"#Project"},
+    { title: "About", id: 1, link: "#About" },
+    { title: "Skill", id: 2, link: "#Skill" },
+    { title: "Career", id: 3, link: "#Career" },
+    { title: "Project", id: 4, link: "#Project" },
 
   ];
   
@@ -34,8 +34,8 @@ export default function Header() {
             <path
               d="M3 18H21M3 12H21M3 6H21"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
+              strokeWidth="2"
+              strokeLinecap="round"
             />
           </svg>
         </button>
