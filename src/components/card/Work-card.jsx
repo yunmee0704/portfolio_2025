@@ -1,10 +1,13 @@
 import styles from "./Card.module.scss";
 import Button from "../button/Button";
+import work1 from "../../assets/img/work_1.png";
+import work2 from "../../assets/img/work_2.png";
+import work3 from "../../assets/img/work_3.png";
 
 const workList = [
   {
     id: 1,
-    src: './src/assets/img/work_1.png',
+    src: work1,
     title: '미트매치 앱·웹 구축 및 유지보수',
     desc: [
       '- 🗓️ 프로젝트 기간 : 2024.07 ~ 2025.11 (약 1년 5개월)',
@@ -21,7 +24,7 @@ const workList = [
   },
   {
     id: 2,
-    src: './src/assets/img/work_2.png',
+    src: work2,
     title: 'LG-LENS 웹/어드민 신규 구축',
     desc: [
       '- 🗓️ 프로젝트 기간 : 2024.05 ~ 2024.06 (2주)',
@@ -36,7 +39,7 @@ const workList = [
   },
   {
     id: 3,
-    src: './src/assets/img/work_3.png',
+    src: work3,
     title: '자사 홈페이지 리뉴얼 신규 구축',
     desc: [
       '- 🗓️ 프로젝트 기간 : 2024.05 ~ 2024.06(2주)',

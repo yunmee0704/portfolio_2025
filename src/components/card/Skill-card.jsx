@@ -1,4 +1,13 @@
 import styles from "./Card.module.scss";
+import skill1 from "../../assets/img/skill_1.png";
+import skill2 from "../../assets/img/skill_2.png";
+import skill3 from "../../assets/img/skill_3.png";
+
+const skillImgById = {
+  1: skill1,
+  2: skill2,
+  3: skill3,
+};
 
 const skillList = [
   {
@@ -35,7 +44,7 @@ const skillList = [
 const skillItem = skillList.map((item) => (
   <div className={`${styles.card} ${styles['card-skill']}`} key={item.id}>
     <div className={styles['card-skill__icon']}>
-      <img src={`/src/assets/img/skill_${item.id}.png`} alt={`skill_${item.id}`} />
+      <img src={skillImgById[item.id]} alt={`skill_${item.id}`} />
     </div>
     <div className={styles['card-skill__title']}>{item.title}</div>
     <div className={styles['card-skill__description']}>

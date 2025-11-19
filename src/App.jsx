@@ -15,6 +15,7 @@ import SnsCard from "./components/card/Sns-card";
 import DarkModeBtn from "./components/button/DarkMode";
 // import Header from './components/Header';
 import "../src/styles/main.scss";
+import aboutImg from "./assets/img/about.png";
 
 
 function App() {
@@ -59,7 +60,7 @@ function App() {
             <SnsCard />
           </div>
           <div className="section-about__content-image">
-            <img src="../src/assets/img/about.png" alt="about" />
+            <img src={aboutImg} alt="about" />
           </div>
         </section>
         <section className="section section-card" id="Skill">
