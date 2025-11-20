@@ -99,12 +99,13 @@
 
   //작업물 카드
   &-work {
+    position: relative;
     width: calc((100% - 24px) / 2);
     height: auto;
     margin-bottom: 24px;
     border-radius: $radius-lg;
     overflow: hidden;
-    padding: 20px 20px;
+    padding: 20px 20px 90px;
     border: 1px solid var(--border-color);
     box-shadow: $shadow-sm;
     transition:
@@ -165,8 +166,10 @@
       color: var(--text-secondary);
     }
     &__actions {
-      margin-top: 14px;
       display: inline-flex;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
     }
     &__logo-fallback {
       display: inline-flex;
