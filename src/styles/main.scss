@@ -1,11 +1,11 @@
-// 1. Variables (가장 먼저 import - 다른 파일에서 사용)
-@import './variables.scss';
+// 1. Variables (가장 먼저 로드 - 다른 파일에서 사용)
+@use './variables.scss' as *;
 
 // 2. Reset (기본 스타일 초기화)
-@import './reset.scss';
+@use './reset.scss';
 
 // 3. Global (전역 공통 스타일)
-@import './global.scss';
+@use './global.scss';
 
 //4. layout (레이아웃 스타일)
-@import './layout.scss';
+@use './layout.scss';

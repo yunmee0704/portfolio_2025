@@ -34,7 +34,7 @@ const skillList = [
     desc: [
       { id: 1, text: "Git·Jira·Confluence·Figma 협업툴 경험" },
       { id: 2, text: "React 기반 앱 스타일 유지보수 경험" },
-      { id: 3, text: "커뮤니케이션 능력 및 일정 책임감 있는 진행" }
+      { id: 3, text: "커뮤니케이션 능력 / 책임감 있는 진행" }
     ],
   },
 ];
