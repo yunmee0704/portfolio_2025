@@ -15,11 +15,14 @@ body {
     &.darkmode {
         --bg-color: #0b1220;
         --bg-accent: #111a2e;
-        --text-primary: #e5e7eb;
+        --text-primary: #f4f4f5;
         --text-secondary: #9ca3af;
         --card-bg: rgba(13, 18, 31, 0.60);
         --border-color: rgba(148, 163, 184, 0.12);
         --accent: #22d3ee;
+        --lineage-bg: #0a111a;
+        --lineage-line: rgba(255, 255, 255, 0.14);
+        --lineage-dot: #ffffff;
         color: var(--text-primary);
         border-color:$white;
     }
@@ -32,6 +35,9 @@ body {
         --card-bg: rgba(255, 255, 255, 0.70);
         --border-color: rgba(15, 23, 42, 0.08);
         --accent: #0ea5e9;
+        --lineage-bg: #e8ecf3;
+        --lineage-line: rgba(15, 23, 42, 0.12);
+        --lineage-dot: #1f2937;
         color: var(--text-primary);
         border-color: $black;
     }

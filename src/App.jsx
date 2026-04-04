@@ -68,11 +68,12 @@ function App() {
             <SkillCard />
           </div>
         </section>
-        <section className="section section-card" id="Career">
-          <div className="section-card__title">
-            <h2>Career</h2>
-          </div>
-          <div className="section-card__content">
+        <section className="section section-lineage" id="Career">
+          <div className="section-lineage__inner">
+            <header className="section-lineage__head">
+              <span className="section-lineage__eyebrow">Experience</span>
+              <h2>Career</h2>
+            </header>
             <CareerCard />
           </div>
         </section>
