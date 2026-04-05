@@ -32,9 +32,15 @@ const skillList = [
     id: 3,
     title: "협업 중심의 퍼블리싱",
     desc: [
-      { id: 1, text: "Git·Jira·Confluence·Figma 협업툴 경험" },
-      { id: 2, text: "React 기반 앱 스타일 유지보수 경험" },
-      { id: 3, text: "커뮤니케이션 능력 / 책임감 있는 진행" }
+      {
+        id: 1,
+        text: "Vue.js 서비스에서 기존 컴포넌트 구조 분석·재사용으로 UI 개발, 시안 기반 퍼블리싱·인터랙션·반응형",
+      },
+      {
+        id: 2,
+        text: "신규 컴포넌트 추가·구조 확장으로 유지보수성·확장성 개선, 기획·디자인·개발과 스펙·일정 맞춤 협업",
+      },
+      { id: 3, text: "Git·Jira·Confluence·Figma 협업, React 앱 스타일 유지보수" },
     ],
   },
 ];

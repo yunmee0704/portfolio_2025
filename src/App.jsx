@@ -1,5 +1,6 @@
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { usePortfolioMotion } from './hooks/usePortfolioMotion';
 // 라우터 제거: 단일 페이지 앵커 네비게이션만 사용
 
 
@@ -20,6 +21,7 @@ import aboutImg from "./assets/img/about.png";
 
 function App() {
   const [mode, Setmode] = useState(true);
+  const mainRef = usePortfolioMotion();
   const modechange = () => {
     Setmode(!mode);
   }
@@ -41,10 +43,14 @@ function App() {
     });
   }, [mode]);
 
+  useEffect(() => {
+    ScrollTrigger.refresh();
+  }, [mode]);
+
   return (
     <div className="container">
       <Header></Header>
-      <main className="main">
+      <main className="main" ref={mainRef}>
         <section className="section section-about" id="About">
           <div className="section-about-content">
             <div className="section-about__content-title">
@@ -63,12 +69,12 @@ function App() {
             <img src={aboutImg} alt="about" />
           </div>
         </section>
-        <section className="section section-card" id="Skill">
+        <section className="section section-card portfolio-section" id="Skill">
           <div className="section-card__content">
             <SkillCard />
           </div>
         </section>
-        <section className="section section-lineage" id="Career">
+        <section className="section section-lineage portfolio-section" id="Career">
           <div className="section-lineage__inner">
             <header className="section-lineage__head">
               <span className="section-lineage__eyebrow">Experience</span>
@@ -77,7 +83,7 @@ function App() {
             <CareerCard />
           </div>
         </section>
-        <section className="section section-card" id="Project">
+        <section className="section section-card portfolio-section" id="Project">
           <div className="section-card__title">
             <h2>Project</h2>
           </div>

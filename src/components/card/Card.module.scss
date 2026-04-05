@@ -105,7 +105,7 @@
     margin-bottom: 24px;
     border-radius: $radius-lg;
     overflow: hidden;
-    padding: 20px 20px 90px;
+    padding: 20px 20px 100px;
     border: 1px solid var(--border-color);
     box-shadow: $shadow-sm;
     transition:
@@ -166,10 +166,14 @@
       color: var(--text-secondary);
     }
     &__actions {
-      display: inline-flex;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: flex-end;
       position: absolute;
       right: 20px;
       bottom: 20px;
+      max-width: calc(100% - 40px);
     }
     &__logo-fallback {
       display: inline-flex;
