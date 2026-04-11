@@ -2,10 +2,6 @@ import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-/**
- * 히어로 로드 인 + 섹션 스크롤 등장 (ScrollTrigger).
- * prefers-reduced-motion 이면 실행하지 않음.
- */
 export function usePortfolioMotion() {
   const rootRef = useRef(null);
 

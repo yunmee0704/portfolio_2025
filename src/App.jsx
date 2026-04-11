@@ -1,20 +1,13 @@
 import { useState, useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { usePortfolioMotion } from './hooks/usePortfolioMotion';
-// 라우터 제거: 단일 페이지 앵커 네비게이션만 사용
 
-
-
-
-
-// 컴포넌트 연결
 import Header from "./components/header/Header";
 import SkillCard from "./components/card/Skill-card";
 import CareerCard from "./components/card/Career-card";
 import WorkCard from "./components/card/Work-card";
 import SnsCard from "./components/card/Sns-card";
 import DarkModeBtn from "./components/button/DarkMode";
-// import Header from './components/Header';
 import "../src/styles/main.scss";
 import aboutImg from "./assets/img/about.png";
 

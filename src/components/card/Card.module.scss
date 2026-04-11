@@ -29,9 +29,14 @@
     width: 100%;
   }
 
-  // 기술 카드
   &-skill {
-    height: 429px;
+    align-self: start;
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 0;
+    width: auto;
+    height: 100%;
+    justify-content: flex-start;
     padding: 64px 42px;
 
     &__icon {
@@ -51,10 +56,10 @@
       font-weight: 400;
       line-height: 24px;
       text-align: center;
+      overflow-wrap: anywhere;
     }
   }
 
-  //커리어 카드
   &-career {
     display: flex;
     flex-direction: column;
@@ -97,10 +102,11 @@
     }
   }
 
-  //작업물 카드
   &-work {
     position: relative;
-    width: calc((100% - 24px) / 2);
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
     height: auto;
     margin-bottom: 24px;
     border-radius: $radius-lg;
@@ -188,6 +194,8 @@
     }
 
     @media screen and (max-width: $breakpoint-mobile) {
+      flex: none;
+      max-width: none;
       width: 100%;
       height: auto;
       &__media {
@@ -198,7 +206,6 @@
     }
   }
 
-  //   sns리스트카드
   &-sns {
     display: flex;
     gap: 20px;
