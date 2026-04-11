@@ -109,6 +109,21 @@
   }
 }
 
+#Skill {
+  .section-card__content {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+#Project {
+  .section-card__content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+}
+
 .section-lineage {
   width: 100vw;
   max-width: 100vw;
@@ -158,6 +173,14 @@
   .section-lineage__head {
     position: sticky;
     top: 96px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+  #Project {
+    .section-card__content-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
   }
 }
 
@@ -253,15 +276,24 @@
 
 @media screen and (min-width: $breakpoint-lineage) {
   .lineage-timeline {
-    padding-left: 26px;
-    max-width: 640px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(24px, 4vw, 40px);
+    row-gap: clamp(40px, 5vw, 64px);
+    max-width: none;
+    padding-left: 0;
+    border-left: none;
   }
 
   .lineage-item {
-    padding-bottom: clamp(56px, 5vw, 88px);
+    padding-bottom: 0;
+    border-left: 1px solid var(--lineage-line);
+    padding-left: clamp(18px, 2.5vw, 24px);
 
     &::before {
-      left: -31px;
+      left: 0;
+      transform: translateX(-50%);
+      top: 5px;
     }
   }
 }
