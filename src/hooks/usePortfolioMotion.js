@@ -45,6 +45,22 @@ export function usePortfolioMotion() {
 
         if (!targets.length) return;
 
+        if (section.id === "Skill") {
+          gsap.from(targets, {
+            scrollTrigger: {
+              trigger: section,
+              start: "top 86%",
+              toggleActions: "play none none none",
+            },
+            opacity: 0,
+            duration: 0.72,
+            stagger: 0.11,
+            ease: "power3.out",
+            clearProps: "transform",
+          });
+          return;
+        }
+
         gsap.from(targets, {
           scrollTrigger: {
             trigger: section,

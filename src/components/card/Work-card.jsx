@@ -5,25 +5,25 @@ import work2 from "../../assets/img/work_2.png";
 import work3 from "../../assets/img/work_3.png";
 
 const workList = [
-  {
-    id: 5,
-    title: "보험 추천 챗봇(목데이터) 웹 구축",
-    desc: [
-      "- 📌 개인 프로젝트",
-      "- 🗓️ 프로젝트 기간 : 2026.03.29 ~ 2026.04.05(약 1주)",
-      "- 💪🏻 기여도 : 100%",
-      "- React 기반으로 채팅 화면을 MessageList, InputBox, InsuranceRecCard 컴포넌트로 분리해 UI 구조화 및 유지보수성 강화",
-      "- 보험 키워드 기반 추천 로직을 설계해 사용자 입력 맥락에 맞는 상품 카드 노출(조건 분기/데이터 매핑) 구현",
-      "- OpenAI API 키로 연결하여 프로젝트 만든 후 배포용 목데이터 응답 흐름을 구성해 배포 안정성과 데모 재현성 확보",
-      "- Enter 전송, 로딩(typing) 상태, 자동 스크롤 등 사용자 중심 인터랙션을 구현해 대화 UX 개선",
-      "- SCSS 기반 스타일 분리 및 반응형 레이아웃 적용으로 PC/모바일 환경에서 일관된 UI 제공",
-      "- 🛠️ 기술 : React, Vite, JavaScript(ES6+), SCSS, HTML5, CSS3",
-    ],
-    ctas: [
-      { label: "사이트 보기", url: "https://yunmee0704.github.io/chat_project/" },
-      { label: "GitHub 보기", url: "https://github.com/yunmee0704/chat_project" },
-    ],
-  },
+  // {
+  //   id: 5,
+  //   title: "보험 추천 챗봇(목데이터) 웹 구축",
+  //   desc: [
+  //     "- 📌 개인 프로젝트",
+  //     "- 🗓️ 프로젝트 기간 : 2026.03.29 ~ 2026.04.05(약 1주)",
+  //     "- 💪🏻 기여도 : 100%",
+  //     "- React 기반으로 채팅 화면을 MessageList, InputBox, InsuranceRecCard 컴포넌트로 분리해 UI 구조화 및 유지보수성 강화",
+  //     "- 보험 키워드 기반 추천 로직을 설계해 사용자 입력 맥락에 맞는 상품 카드 노출 구현",
+  //     "- 목데이터 응답 흐름을 구성",
+  //     "- Enter 전송, 자동 스크롤 등 사용자 중심 인터랙션을 구현해 대화 UX 개선",
+  //     "- SCSS 기반 스타일 분리 및 반응형 레이아웃 적용으로 PC/모바일 환경에서 일관된 UI 제공",
+  //     "- 🛠️ 기술 : React, Vite, JavaScript(ES6+), SCSS, HTML5, CSS3",
+  //   ],
+  //   ctas: [
+  //     { label: "사이트 보기", url: "https://yunmee0704.github.io/chat_project/" },
+  //     { label: "GitHub 보기", url: "https://github.com/yunmee0704/chat_project" },
+  //   ],
+  // },
   {
     id: 1,
     src: work1,
