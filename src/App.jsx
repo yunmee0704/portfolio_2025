@@ -71,7 +71,7 @@ function App() {
           <div className="section-lineage__inner">
             <header className="section-lineage__head">
               <span className="section-lineage__eyebrow">Experience</span>
-              <h2>Career</h2>
+              <h2>Career (3년 3개월)</h2>
             </header>
             <CareerCard />
           </div>
