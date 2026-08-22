@@ -1,32 +1,26 @@
 import styles from "./Card.module.scss";
 import Button from "../button/Button";
-import work1 from "../../assets/img/work_1.png";
-import work2 from "../../assets/img/work_2.png";
-import work3 from "../../assets/img/work_3.png";
+import work2 from "../../assets/img/work_1.png";
+import work3 from "../../assets/img/work_2.png";
+import work5 from "../../assets/img/work_5.png";
+import work6 from "../../assets/img/work_6.png";
 
 const workList = [
-  // {
-  //   id: 5,
-  //   title: "보험 추천 챗봇(목데이터) 웹 구축",
-  //   desc: [
-  //     "- 📌 개인 프로젝트",
-  //     "- 🗓️ 프로젝트 기간 : 2026.03.29 ~ 2026.04.05(약 1주)",
-  //     "- 💪🏻 기여도 : 100%",
-  //     "- React 기반으로 채팅 화면을 MessageList, InputBox, InsuranceRecCard 컴포넌트로 분리해 UI 구조화 및 유지보수성 강화",
-  //     "- 보험 키워드 기반 추천 로직을 설계해 사용자 입력 맥락에 맞는 상품 카드 노출 구현",
-  //     "- 목데이터 응답 흐름을 구성",
-  //     "- Enter 전송, 자동 스크롤 등 사용자 중심 인터랙션을 구현해 대화 UX 개선",
-  //     "- SCSS 기반 스타일 분리 및 반응형 레이아웃 적용으로 PC/모바일 환경에서 일관된 UI 제공",
-  //     "- 🛠️ 기술 : React, Vite, JavaScript(ES6+), SCSS, HTML5, CSS3",
-  //   ],
-  //   ctas: [
-  //     { label: "사이트 보기", url: "https://yunmee0704.github.io/chat_project/" },
-  //     { label: "GitHub 보기", url: "https://github.com/yunmee0704/chat_project" },
-  //   ],
-  // },
   {
     id: 1,
-    src: work1,
+    title: "미트매치 컴포넌트 가이드페이지 작성",
+    desc: [
+      "- 🗓️ 프로젝트 기간 : 2026.08 (1주)",
+      "- 💪🏻 기여도 : 100%",
+      "- 미트매치 컴포넌트 가이드페이지 작성",
+      "- 🛠️ 기술 : HTML5, CSS, SCSS, jQuery",
+    ],
+    ctaUrl: "https://yunmee0704.github.io/project_meat/html/guide-component.html",
+    ctaLabel: "페이지 보기",
+  },
+  {
+    id: 2,
+    src: work2,
     title: "미트매치 앱·웹 구축 및 유지보수",
     desc: [
       "- 🗓️ 프로젝트 기간 : 2024.07 ~ 2025.11 (약 1년 5개월)",
@@ -42,8 +36,8 @@ const workList = [
     ctaLabel: "주요 페이지 보기",
   },
   {
-    id: 2,
-    src: work2,
+    id: 3,
+    src: work3,
     title: "LS Electric LG-LENS 웹/어드민 신규 구축",
     desc: [
       "- 🗓️ 프로젝트 기간 : 2025.05 ~ 2025.06 (2개월)",
@@ -57,8 +51,7 @@ const workList = [
     ctaLabel: "사이트 보기",
   },
   {
-    id: 3,
-    src: work3,
+    id: 4,
     title: "자사 홈페이지 리뉴얼 신규 구축",
     desc: [
       "- 🗓️ 프로젝트 기간 : 2025.01 ~ 2025.02(2개월)",
@@ -72,18 +65,35 @@ const workList = [
     ctaLabel: "사이트 보기",
   },
   {
-    id: 4,
-    title: "Portfolio 2025",
+    id: 5,
+    src: work5,
+    title: "에듀윌 회계사 수험정보 페이지",
     desc: [
-      "- 🗓️ 프로젝트 기간 : 2025.12 (1주)",
-      "- React + Vite + SCSS로 개인 포트폴리오 구축",
-      "- useState/useEffect로 다크모드 테마 전환 구현",
-      "- props와 map으로 카드/버튼 등 재사용 컴포넌트 구성",
-      "- CSS 변수 + 글라스모피즘 UI, 반응형 레이아웃 적용",
-      "- 🛠️기술 : React, Vite, SCSS",
+      "- 🗓️ 프로젝트 기간 : 2024.08 (3일)",
+      "- 💪🏻 기여도 : 100%",
+      "- 헤더와 푸터를 제외한 PC/Mobile 전체 내용 리뉴얼 및 스타일 조정",
+      "- Jquery로 탭 기능 구현",
+      "- 🛠️ 기술 : HTML5, CSS, SCSS, jQuery",
     ],
-    ctaUrl: "https://github.com/yunmee0704/portfolio_2025",
-    ctaLabel: "GitHub 보기",
+    ctaUrl: "https://cpta.eduwill.net/Contents/CommonPage?strUrl=_114_1/info/about",
+    ctaLabel: "페이지 보기",
+  },
+  {
+    id: 6,
+    src: work6,
+    title: "국제무역사 서브노트",
+    desc: [
+      "- 🗓️ 프로젝트 기간 : 2024.01 (3일)",
+      "- 💪🏻 기여도 : 100%",
+      "- 기존 통이미지 중심 작업 방식에서 벗어나 웹 표준과 접근성을 고려해 퍼블리싱",
+      "- 대체 텍스트를 작성하고 텍스트는 시스템 폰트로 구현, 필요한 크기만 이미지 슬라이스 후 CSS 배치",
+      "- TweenMax를 활용해 타이틀 애니메이션 효과 구현",
+      "- 기획 의도에 맞춰 특정 스크롤 시점에서 동작하는 애니메이션 구현",
+      "- 후기 작성 양식 퍼블리싱",
+      "- 🛠️ 기술 : HTML5, CSS, SCSS, jQuery",
+    ],
+    ctaUrl: "https://event.eduwill.net/event/2023/_101/SubNote",
+    ctaLabel: "페이지 보기",
   },
 ];
 
@@ -103,7 +113,7 @@ const workItem = workList.map((item) => {
             <img src={item.src} alt="" />
           ) : (
             <span className={styles["card-work__logo-fallback"]}>
-              {item.id === 5 ? "CHAT" : "PORTFOLIO"}
+              {item.id === 1 || item.id === 5 ? "component-guide" : "PORTFOLIO"}
             </span>
           )}
         </div>
